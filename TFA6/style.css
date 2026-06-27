@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: 'Trebuchet MS', Verdana, Arial, sans-serif;
+    background-color: #f1faee;
+    background-size: 22px 22px;
+    display: flex;
+    justify-content: center;
+    padding: 48px 20px;
+    color: #24382c;
+}
+ 
+.container {
+    background-color: #fbf8f1;
+    width: 100%;
+    max-width: 460px;
+    border-radius: 4px;
+    padding: 0;
+    box-shadow: 0 14px 30px rgba(20, 40, 30, 0.18);
+    border: 1px solid #d9cdb2;
+    overflow: hidden;
+}
+ 
+.container.wide {
+    max-width: 880px;
+}
+ 
+.container h1 {
+    background-color: #1b4332;
+    background-image: linear-gradient(160deg, #1b4332 0%, #2d6a4f 100%);
+    color: #f5ecd8;
+    text-align: left;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 22px 32px;
+    border-bottom: 3px double #b08d57;
+    position: relative;
+}
+ 
+.container h1::before {
+    content: "PAW REGISTRY";
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #b9d4c2;
+    margin-bottom: 4px;
+}
+ 
+.container.wide h1::before {
+    content: "PAW REGISTRY \2014 ALL ENTRIES";
+}
+ 
+form {
+    padding: 28px 32px 32px;
+}
+ 
+label {
+    display: block;
+    color: #1b4332;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+ 
+input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    background-color: #fffdf8;
+    border: 1px solid #cdbf9d;
+    border-bottom: 2px solid #2d6a4f;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #24382c;
+    outline: none;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+ 
+input[type="text"]:focus {
+    border-color: #1b4332;
+    background-color: #ffffff;
+}
+ 
+button {
+    width: 100%;
+    margin-top: 26px;
+    padding: 13px;
+    background-color: #1b4332;
+    color: #f5ecd8;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+ 
+button:hover {
+    background-color: #143628;
+}
+ 
+.message {
+    background-color: #e7f0e6;
+    color: #1b4332;
+    border-left: 4px solid #2d6a4f;
+    padding: 10px 14px;
+    border-radius: 2px;
+    font-size: 13px;
+    margin: 24px 32px 0;
+}
+ 
+.link {
+    text-align: center;
+    margin: 22px 0 4px;
+    font-size: 13px;
+    padding: 0 32px 24px;
+}
+ 
+.link a {
+    color: #1b4332;
+    text-decoration: none;
+    font-weight: 700;
+    border-bottom: 1px solid #b08d57;
+    padding-bottom: 1px;
+}
+ 
+.link a:hover {
+    color: #2d6a4f;
+    border-color: #2d6a4f;
+}
+ 
+.footer {
+    text-align: center;
+    padding: 14px 0;
+    background-color: #f1ead8;
+    border-top: 1px solid #d9cdb2;
+    color: #8a8068;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+ 
+.table-wrap {
+    padding: 28px 32px 32px;
+}
+ 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+ 
+th {
+    background-color: #1b4332;
+    color: #f5ecd8;
+    padding: 11px 12px;
+    text-align: left;
+    font-size: 11px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+ 
+td {
+    padding: 11px 12px;
+    border-bottom: 1px solid #e3dac3;
+    font-size: 14px;
+    color: #2c3e34;
+}
+ 
+tbody tr:nth-child(even) {
+    background-color: #f4eee0;
+}
+ 
+tbody tr:hover {
+    background-color: #e7f0e6;
+}
+ 
+tbody tr:last-child td {
+    border-bottom: none;
+}
