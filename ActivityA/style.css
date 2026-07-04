@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', Verdana, Arial, sans-serif;
+    background-color: #E8DFC9;
+    display: flex;
+    justify-content: center;
+    padding: 48px 20px;
+    color: #3B5770;
+}
+
+.container {
+    background-color: #F5F0E6;
+    width: 100%;
+    max-width: 460px;
+    border-radius: 4px;
+    padding: 0;
+    box-shadow: 0 14px 30px rgba(59, 87, 112, 0.22);
+    border: 1px solid #A9C6DE;
+    overflow: hidden;
+}
+
+.container.wide {
+    max-width: 880px;
+}
+
+.container h1 {
+    background-color: #3B5770;
+    background-image: linear-gradient(160deg, #3B5770 0%, #6D93B8 100%);
+    color: #F5F0E6;
+    text-align: left;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 22px 32px;
+    border-bottom: 3px double #A9C6DE;
+    position: relative;
+}
+
+.container h1::before {
+    content: "ACTIVITY A";
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #BFD6E8;
+    margin-bottom: 4px;
+}
+
+.container.wide h1::before {
+    content: "ACTIVITY A \2014 MY ACCOUNT";
+}
+
+form,
+.content {
+    padding: 28px 32px 32px;
+}
+
+label {
+    display: block;
+    color: #3B5770;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+
+label:first-child {
+    margin-top: 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px 12px;
+    background-color: #FFFFFF;
+    border: 1px solid #A9C6DE;
+    border-bottom: 2px solid #6D93B8;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #3B5770;
+    outline: none;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+input:focus {
+    border-color: #3B5770;
+    background-color: #FFFFFF;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    font-size: 13px;
+    color: #3B5770;
+}
+
+.checkbox-row input[type="checkbox"] {
+    accent-color: #3B5770;
+}
+
+.checkbox-label {
+    margin: 0;
+    text-transform: none;
+    font-weight: normal;
+    font-size: 13px;
+    display: inline;
+}
+
+button {
+    width: 100%;
+    margin-top: 26px;
+    padding: 13px;
+    background-color: #3B5770;
+    color: #F5F0E6;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+button:hover {
+    background-color: #2A4358;
+}
+
+.message {
+    background-color: #EAF1F6;
+    color: #3B5770;
+    border-left: 4px solid #6D93B8;
+    padding: 10px 14px;
+    border-radius: 2px;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 24px 32px 0;
+}
+
+.message.success {
+    background-color: #E9F0E8;
+    border-left-color: #3B5770;
+}
+
+.message.error {
+    background-color: #F6E4E1;
+    border-left-color: #B3572B;
+    color: #7A3A1E;
+}
+
+.link {
+    text-align: center;
+    margin: 22px 0 4px;
+    font-size: 13px;
+    padding: 0 32px 24px;
+}
+
+.link a {
+    color: #3B5770;
+    text-decoration: none;
+    font-weight: 700;
+    border-bottom: 1px solid #A9C6DE;
+    padding-bottom: 1px;
+}
+
+.link a:hover {
+    color: #6D93B8;
+    border-color: #3B5770;
+}
+
+.footer {
+    text-align: center;
+    padding: 14px 0;
+    background-color: #EFE8D8;
+    border-top: 1px solid #A9C6DE;
+    color: #0b4275;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+.table-wrap {
+    padding: 28px 32px 32px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #3B5770;
+    color: #F5F0E6;
+    padding: 11px 12px;
+    text-align: left;
+    font-size: 11px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 11px 12px;
+    border-bottom: 1px solid #DDE9F1;
+    font-size: 14px;
+    color: #3B5770;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #EEF4F8;
+}
+
+tbody tr:hover {
+    background-color: #EAF1F6;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
